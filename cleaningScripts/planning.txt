@@ -1,0 +1,24 @@
+Steps for cleaning perseus data
+
+```
+Should add Book publisher, title, editor, publisher place info from tei header (new table related to work)
+
+TEI had an api to convert from a tei format to something more machine-friendly. Not sure if this is useful, but worth a shot esp. if there isn't a handy library to work with xml (pandas? or pandas-like)
+```
+
+1. Partition authors by language:
+    -Latin
+    -Greek
+    -Other/Unknown
+
+2. Partition author by work (create JSON for each work)
+    -A file equates to a work
+    -pull out all work-level attributes here, including book info
+    
+<now working with json>
+    
+3. Marry English text to Non-English
+
+4. Partition work by subsection
+    - Ensure English subsection stays with Non-English
+
